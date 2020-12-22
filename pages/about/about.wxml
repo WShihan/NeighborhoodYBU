@@ -1,0 +1,31 @@
+<!--pages/about/about.wxml-->
+<view class="wall" style="width:100%;height:100%;">
+  <view class="con">
+    <view class="head">
+      <text class="head">Information</text>
+    </view>
+    <view class="item claim">
+      <text>{{ claim }}</text>
+    </view>
+    <view class="item feedBack">
+      <view class="feed-head">
+        <text></text>
+      </view>
+      <form bindsubmit="sentFeedBack">
+        <view class="feed-in">
+        <label class="content">反馈内容:</label><textarea name='feedback' class="content" value="{{ tem }}" placeholder="请在此写下反馈！" placeholder-style="#fa45"></textarea>
+      </view>
+      <view class="feed-in" style="height:5vh;margin-top:1vw;">
+        <label class="email">邮箱/电话:</label><input name='email' class="email" value="{{ tem }}" placeholder="必填，我们通过该联系方式回复您" placeholder-style="#fa45"/>
+      </view>
+      <button form-type="submit" style="width:25vw;font-size:4vw;">留言</button>
+      </form>
+    </view>
+  </view>
+</view>
+<view class="tip">
+  <text>Join us,be a developer</text>
+</view>
+<view class="footer" bindtap="showPhone">
+  <image src="../../image/phone.png" mode="widthFix"></image>
+</view>

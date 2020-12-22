@@ -1,0 +1,85 @@
+<!--index.wxml-->
+<view class="convas">
+  <swiper id="swiper" class="one" autoplay="true" next-margin="0rpx" circular="treu" indicator-dots="true" duration="{{ duration }}" indicator-active-color="yellow" interval="8000" style="height:{{swiperHeight}}px;" >
+    <block wx:for="{{ infos }}" wx:key="*this">
+      <swiper-item>
+        <block>
+          <view id="One" class="One">
+            <view class="one-img">
+              <image id="one-img" data-src="{{ item.url }}" src="{{ item.url }}" bindtap="click_pic" style="width:100%;height:100%;" mode="widthFix"></image>
+            </view>
+            <view class="one-text">
+              <view id="des" class="one-text-des">
+                <text bindtap="click_des" class="saying" data-saying="{{ item.saying }}" selectable="true">{{ item.saying }}</text>
+              </view>
+              <view class="one-text-date" bindtap="click_date">
+                <view class="one-text-date-day">
+                  <text class="date-day">{{ item.day }}</text>
+                </view>
+                <view class="one-text-date-year">
+                  <text class="date-year">{{ item.date }}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="wall">
+    <view class="outer">
+      <view class="con">
+      <view class="items" hover-class="hover" style="border-radius: 0vw 0vw 0vw 0vw;">
+        <view class="item" bindtap="click_soft">
+          <view class="img">
+            <image src="../../image/rj.png" mode="AspectFit"></image>
+          </view>
+          <view class="des">
+            软件安装
+          </view>
+        </view>
+      </view>
+      <view class="items" hover-class="hover" style="border-radius: 0vw 0vw 0vw 0vw;">
+        <view class="item" bindtap="click_pack">
+          <view class="img">
+            <image src="../../image/pk.png" mode="aspectFit"></image>
+          </view>
+          <view class="des">
+            快递代取
+          </view>
+        </view>
+      </view>
+      <view class="items" hover-class="hover" style="border-radius: 0vw 0vw 0vw 0vw;">
+        <view class="item" bindtap="click_takeOut">
+          <view class="img">
+            <image src="../../image/wm.png" mode="aspectFit"></image>
+          </view>
+          <view class="des">
+            外卖代取
+          </view>
+        </view>
+      </view>
+      <view class="items" hover-class="hover" style="border-radius: 0vw 0vw 2vw 0vw;">
+        <view class="item" bindtap="click_more">
+          <view class="img">
+            
+          </view>
+          <view class="des">
+            更多……
+          </view>
+        </view>
+      </view>
+    </view>
+    </view>
+    <block class="floatWindow" wx:if="{{ flagWindow == 1}}">
+      <view class="floatWindow">
+        <view class="windowDetail" style="text-align:{{ textPosition }}">
+          <text class="windowDetail" selectable="true">{{ emoji }}</text>
+        </view>
+        <view class="windowClose" bindtap="closeWindow" hover-class="hover">
+          <image class = "windowClose" src="{{ path }}" mode="widthFix"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

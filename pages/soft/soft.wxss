@@ -1,0 +1,38 @@
+/* pages/takeOut.wxss */
+.wall {
+  width:100vw;
+  height:100vh;
+}
+form {
+  width:90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:10vw auto 0vw;
+  justify-content: center;
+  background-color:#a3c8f1;
+  border-radius: 2vw;
+}
+.item {
+  widows: 86vw;
+  height:10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:#a3c8f1;
+}
+input {
+  width:45vw;
+  border:0.1vw solid black;
+}
+label {
+  width:20vw;
+  font-size: 4vw;
+  margin-right: 4vw;
+}
+
+button {
+  margin-top: 2vw;
+  background-color: #c05959;
+}

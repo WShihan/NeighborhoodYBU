@@ -1,0 +1,36 @@
+<!--pages/pack.wxml-->
+<view class="img">
+    <image src="../../image/pack/school.jpg" mode="AspectFit"></image>
+</view>
+<view class="outer">
+  <view class="form">
+    <form bindsubmit="sentData">
+      <view class="item" style="margin-top:1vw;">
+        <label>收件人:</label><input name="name" value="{{tem }}" placeholder="必填" placeholder-style="color:red"/>
+      </view>
+      <view class="item">
+        <label>电话号:</label><input name="phone" value="{{tem }}" placeholder="必填" placeholder-style="color:red"/>
+      </view>
+      <view class="item">
+        <label>取件码:</label><input name="code" value="{{tem }}" placeholder="必填" placeholder-style="color:red"/>
+      </view>
+      <view class="item">
+        <label>寝室号:</label><input name="add" value="{{tem }}" placeholder="必填" placeholder-style="color:red"/>
+      </view>
+      <view class="item">
+        <label> 备    注:</label><input name="note" value="{{tem }}" placeholder="选填"/>
+      </view>
+      <view class="item" style="margin-top:2vw;">
+        <radio-group class="cb" name="cb" style="font-size:3vw;">
+          <radio name="size" value="M">普通件</radio>
+          <radio name="size" value="L" style="margin:0vw 4vw;">大件</radio>
+          <radio name="size" value="XL">超大件</radio>
+        </radio-group>
+        <button form-type="submit"style="width:25vw;font-size:4vw;margin-top:10vw;background-color:brown;">提交</button>
+      </view>
+    </form>
+  </view>
+</view>
+<view class="footer" bindtap="toCan">
+  <image src="../../image/cancel.png" mode="widthFix"></image>
+</view>

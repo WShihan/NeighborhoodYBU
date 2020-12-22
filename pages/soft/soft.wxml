@@ -1,0 +1,21 @@
+<!--pages/takeOut.wxml-->
+<view class="wall">
+  <form bindsubmit="sentData">
+    <view class="item" style="color:blue">
+      软件安装信息填写后会有专门人员联系
+    </view>
+    <view class="item">
+      <label>姓名 :</label><input name="name" value="{{tem }}" placeholder="必填" placeholder-style="red"/>
+    </view>
+    <view class="item">
+      <label>电话号:</label><input name="phone" value="{{tem }}" placeholder="必填，联系用" placeholder-style="red"/>
+    </view>
+    <view class="item">
+      <label>软件名:</label><input name="soft" value="{{tem }}" placeholder="必填" placeholder-style="red"/>
+    </view>
+    <view class="item">
+      <label>备  注:</label><input name="note" value="{{tem }}" placeholder="选填" placeholder-style="red"/>
+    </view>
+    <button form-type="submit">提交</button>
+  </form>
+</view>

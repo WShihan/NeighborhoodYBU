@@ -1,0 +1,113 @@
+/* pages/about/about.wxss */
+.wall {
+  width:100vw;
+  height: 100vh;
+}
+.con {
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0vw auto;
+  background-color: #c0c3f0;
+}
+
+.item {
+  width:95vw;
+  margin: 2vw auto;
+  border:0.2vw solid black;
+}
+.claim {
+  width:95vw;
+  font-size: 5vw;
+  background-color: white;
+
+}
+
+.feedback{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.feed-head{
+  width: 95vw;
+  text-align: center;
+  font-size: 4vw;
+}
+.feed-in {
+  height:15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+label.content {
+  width:20vw;
+  font-size: 4vw;
+  margin:8vw auto;
+  text-align:center;
+
+}
+text.head {
+  font-size: 5vw;
+  color:red;
+
+}
+textarea.content {
+  width:65vw;
+  height:12vh;
+  font-size: 4vw;
+  color:#7f86e7;
+  margin-top: 1vw;
+  border:0.2vw solid red;
+  background-color: white;
+}
+label.email {
+  width:20vw;
+  font-size: 4vw;
+  text-align:center;
+}
+input.email {
+  width:65vw;
+  height:5vh;
+  color:#7f86e7;
+  border:0.2vw solid red;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  margin-top: 2vh;
+  background-color: #941e1e;
+}
+.footer {
+  width:12vw;
+  position: fixed;
+  bottom: 3vw;
+  right: 1vw;
+  padding:1vw;
+  border-radius: 1vw;
+}
+.footer image {
+  width:inherit;
+  height: inherit;
+}
+
+/*---------提示---------*/
+view.tip {
+  width:40vw;
+  height:2vh;
+  margin:0vw auto;
+  position: fixed;
+  bottom: 0.5vw;
+  left: 35vw;
+  font-size: 3vw;
+}
